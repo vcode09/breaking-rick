@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BasicWorkTest.iml" filepath="$PROJECT_DIR$/.idea/modules/BasicWorkTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BasicWorkTest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BasicWorkTest.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BasicWorkTest.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BasicWorkTest.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BasicWorkTest.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BasicWorkTest.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mylibrary/BasicWorkTest.app.mylibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mylibrary/BasicWorkTest.app.mylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BasicWorkTest.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BasicWorkTest.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/BasicWorkTest.data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/BasicWorkTest.data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/BasicWorkTest.data.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data/BasicWorkTest.data.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/BasicWorkTest.data.main.iml" filepath="$PROJECT_DIR$/.idea/modules/data/BasicWorkTest.data.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/BasicWorkTest.data.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data/BasicWorkTest.data.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/di/BasicWorkTest.di.iml" filepath="$PROJECT_DIR$/.idea/modules/di/BasicWorkTest.di.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/di/BasicWorkTest.di.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/di/BasicWorkTest.di.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/di/BasicWorkTest.di.main.iml" filepath="$PROJECT_DIR$/.idea/modules/di/BasicWorkTest.di.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/di/BasicWorkTest.di.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/di/BasicWorkTest.di.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/BasicWorkTest.domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/BasicWorkTest.domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/BasicWorkTest.domain.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/BasicWorkTest.domain.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/BasicWorkTest.domain.main.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/BasicWorkTest.domain.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/BasicWorkTest.domain.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/BasicWorkTest.domain.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usecases/BasicWorkTest.usecases.iml" filepath="$PROJECT_DIR$/.idea/modules/usecases/BasicWorkTest.usecases.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usecases/BasicWorkTest.usecases.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/usecases/BasicWorkTest.usecases.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usecases/BasicWorkTest.usecases.main.iml" filepath="$PROJECT_DIR$/.idea/modules/usecases/BasicWorkTest.usecases.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usecases/BasicWorkTest.usecases.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/usecases/BasicWorkTest.usecases.unitTest.iml" />
+    </modules>
+  </component>
+</project>

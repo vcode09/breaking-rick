@@ -1,0 +1,7 @@
+rootProject.name = "BasicWorkTest"
+include ':app'
+include ':app:mylibrary'
+include ':usecases'
+include ':domain'
+include ':data'
+include ':di'

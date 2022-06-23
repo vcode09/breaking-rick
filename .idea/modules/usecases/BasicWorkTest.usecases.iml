@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":usecases" external.linked.project.path="$MODULE_DIR$/../../../usecases" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="BasicWorkTest" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":usecases" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" value="7.0.3" />
+        <option name="LAST_KNOWN_AGP_VERSION" value="7.0.3" />
+      </configuration>
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="4" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../usecases/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$MODULE_DIR$/../../../usecases/build/intermediates/compile_r_class_jar/debug/R.jar:/Users/denise.mendez/Documents/PersonalProyects/breakingBad-master/domain/build/intermediates/compile_library_classes_jar/debug/classes.jar:/Users/denise.mendez/.gradle/caches/transforms-3/6a8e3805dc452f43b58a7fc5ca6b9f5b/transformed/jetified-koin-android-viewmodel-2.2.2-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/a4fb1cdc1d4af73522da15e82b9e77e4/transformed/jetified-koin-android-scope-2.2.2-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/00f595450d9460a69b7a6dcfba2589df/transformed/jetified-koin-android-2.2.2-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/25aaca58752abf7ca711489b0c38860a/transformed/jetified-kotlinx-coroutines-android-1.4.3.jar:/Users/denise.mendez/.gradle/caches/transforms-3/251be88f7c72f5f9aa672e87ecb6a4b6/transformed/jetified-koin-core-2.2.2.jar:/Users/denise.mendez/.gradle/caches/transforms-3/c5ba806625f4e6f1c8a3385249bc58c6/transformed/jetified-kotlinx-coroutines-core-jvm-1.4.3.jar:/Users/denise.mendez/.gradle/caches/transforms-3/f97b8dc5319ceba257ce7062d9310a6e/transformed/jetified-kotlin-stdlib-1.4.32.jar:/Users/denise.mendez/.gradle/caches/transforms-3/7c911d5a3f447a1f00574ae065f6caab/transformed/jetified-kotlin-stdlib-common-1.4.32.jar:/Users/denise.mendez/.gradle/caches/transforms-3/d9ae86c13749aa8b227c5b9c362e36ee/transformed/jetified-annotations-13.0.jar:/Users/denise.mendez/.gradle/caches/transforms-3/465d89694a044da1ca965d96c0c159c5/transformed/lifecycle-extensions-2.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/fc444a87a6638dad6e3d43a27a7e7188/transformed/jetified-lifecycle-process-2.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/8b79c5091eee6a2f8542725783dade15/transformed/jetified-lifecycle-service-2.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/6901cef626be44127f47b3311077de43/transformed/appcompat-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/974dd2cb20e6bf64e20d0402120480c6/transformed/fragment-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/e316572dba524b109ea6cf53e437a8bf/transformed/vectordrawable-animated-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/6f0a2d5b501f71d8b2a54418b31d2d9d/transformed/legacy-support-core-ui-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/07d96b628ed2847e24d83415ff2297fa/transformed/legacy-support-core-utils-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/c27019050e4edd0112070c27cce744b8/transformed/vectordrawable-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/ede6ce8025a097289330fd2547d041de/transformed/loader-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/4c806dc8cce8fc3ab36f887e119e1915/transformed/viewpager-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/4030e16e77f3f3646479fe381bec99cd/transformed/coordinatorlayout-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/edf09b23d00195a7bb49d8d4b4782ba8/transformed/drawerlayout-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/69daf2d411ffe5e7bd0814e78c1bbe23/transformed/slidingpanelayout-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/6165a4e1b05eb92bd0d9eaacc059406c/transformed/customview-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/64238363c9abff6d86e14240ac518aee/transformed/swiperefreshlayout-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/bfd4a4bc49f83cf51b0cd30513e59ac2/transformed/asynclayoutinflater-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/83f5f753fce645b88ca773d8c4ad27b0/transformed/core-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/aedaefb139574d05f02f301bf9b0bebb/transformed/lifecycle-runtime-2.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/3aa90280c571b73e48637cbec5b46175/transformed/lifecycle-livedata-2.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/8cd46ba439f6598bc02405343ebcd184/transformed/lifecycle-livedata-core-2.0.0-api.jar:/Users/denise.mendez/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.0.0/e070ffae07452331bc5684734fce6831d531785c/lifecycle-common-2.0.0.jar:/Users/denise.mendez/.gradle/caches/transforms-3/0133c5dcfc21d77a08ea6171b0a4acb4/transformed/core-runtime-2.0.0-api.jar:/Users/denise.mendez/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.0.0/bb21b9a11761451b51624ac428d1f1bb5deeac38/core-common-2.0.0.jar:/Users/denise.mendez/.gradle/caches/transforms-3/082fbc54f2cf9cde550aa7f9b8e977ca/transformed/lifecycle-viewmodel-2.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/6faf7bcc8189790c5deb147707d4f44c/transformed/versionedparcelable-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.0.0/42858b26cafdaa69b6149f45dfc2894007bc2c7a/collection-1.0.0.jar:/Users/denise.mendez/.gradle/caches/transforms-3/2ee9d0d4adbe7a80a60144758606637e/transformed/cursoradapter-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/4e19ce1570616bd53b50230c1b94a0d3/transformed/documentfile-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/aaf01dac33e29d009f2f41da995782eb/transformed/localbroadcastmanager-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/025698ca7fbd33933b65f7e666b125db/transformed/print-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/transforms-3/fcd119a5be3a65b767c335d237910836/transformed/interpolator-1.0.0-api.jar:/Users/denise.mendez/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.0.0/45599f2cd5965ac05a1488fa2a5c0cdd7c499ead/annotation-1.0.0.jar:/Users/denise.mendez/Library/Android/sdk/platforms/android-30/android.jar:/Users/denise.mendez/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="usecases_debug" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <afterSyncTasks>
+          <task>generateDebugSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../usecases/src/main/res;file://$MODULE_DIR$/../../../usecases/src/debug/res;file://$MODULE_DIR$/../../../usecases/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../usecases/build/generated/res/resValues/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../usecases/src/androidTest/res;file://$MODULE_DIR$/../../../usecases/src/androidTestDebug/res;file://$MODULE_DIR$/../../../usecases/build/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../usecases/build/generated/res/resValues/androidTest/debug" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+        <option name="PROJECT_TYPE" value="1" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../usecases/build/intermediates/javac/debug/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../usecases/build/intermediates/javac/debugUnitTest/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../usecases">
+      <excludeFolder url="file://$MODULE_DIR$/../../../usecases/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../usecases/build" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 30 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

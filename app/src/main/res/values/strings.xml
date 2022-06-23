@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">B Bad</string>
+    <string name="action_settings">Settings</string>
+    <!--GenericMessageException-->
+    <string name="title_generic_exception_error">Message</string>
+    <string name="body_generic_exception_error">Ops! we are presenting problems, please try later</string>
+
+    <!--NetworkMessageException-->
+    <string name="title_network_exception_error">No internet</string>
+    <string name="body_network_exception_error">It looks like you have not internet connection</string>
+    <string name="empty_string" />
+
+    <string name="title_favourite_label">Favourite</string>
+    <string name="empty_favourite_body">There is no favourite added yet</string>
+    <string name="notify_success">Added to favourite</string>
+
+    <string name="delete_favourite_body">Are yo sure to delete this Character from your favourite list ?</string>
+
+    <string name="no_internet_connection">Verify your internet connection</string>
+
+    <string name="accept_label">Accept</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="try_again_label">Try again</string>
+    <string name="first_fragment_title">Breaking Bad</string>
+    <string name="lbl_occupation">Occupation:</string>
+    <string name="lbl_status">Status:</string>
+    <string name="lbl_portrayed">Portrayed:</string>
+    <string name="lbl_nickname">NickName:</string>
+    <string name="lbl_birthday">Birthday:</string>
+    <string name="lbl_category">Category:</string>
+    <string name="lbl_seasons">Seasons appeared in:</string>
+    <string name="lbl_episode_bonus">Episode bonus</string>
+    <string name="lbl_characters">Characters:</string>
+    <string name="lbl_series">Series:</string>
+    <!-- inter spacing between RecyclerView's Item-->
+    <dimen name="gifs_list_spacing">0dp</dimen>
+</resources>

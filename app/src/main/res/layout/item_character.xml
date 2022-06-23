@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.vmoreno.butterfly.rick.modules.character.entities.CharacterBreakingBadUi" />
+        <variable
+            name="viewModel"
+            type="com.vmoreno.butterfly.rick.modules.character.viewmodel.CharacterViewModel" />
+    </data>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraint_card_token_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutDescription="@xml/item_image_scene">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/picture_imageview"
+            android:layout_width="@dimen/generic_image_width"
+            android:layout_height="@dimen/generic_image_height"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:translationZ="6dp"
+            app:elevation="6dp"
+            app:loadImageUrl="@{item.img}"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            tools:ignore="ImageContrastCheck,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="232dp"
+            tools:layout_editor_absoluteY="91dp"
+            tools:src="@drawable/rick_default" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view_token_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:rippleColor="@color/colorPrimary"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/generic_margin_xx_small"
+                android:padding="@dimen/generic_margin_x_small">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/generic_margin_x_medium"
+                    android:layout_marginEnd="@dimen/generic_margin_small"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/title_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="@{item.name}"
+                        android:textColor="#757575"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Naruto frog frog frog " />
+
+                    <TextView
+                        android:id="@+id/price_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="@dimen/generic_margin_x_small"
+                        android:layout_marginBottom="24dp"
+                        android:text="@{item.nickname}"
+                        android:textColor="#757575"
+                        android:textSize="@dimen/text_size_title"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title_textView"
+                        tools:text="Hank" />
+
+                    <ImageView
+                        android:id="@+id/favourite_imageView"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="@dimen/generic_margin_xx_small"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_favourite_empty"
+                        app:isFavourite="@{item}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

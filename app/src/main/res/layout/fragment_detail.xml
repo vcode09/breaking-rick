@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.vmoreno.butterfly.rick.modules.character.viewmodel.CharacterViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="@dimen/generic_margin_x_small"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_round_arrow_back_ios_24"
+            app:title="@{viewModel.character.name}"
+            app:titleTextColor="@color/textLight" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/picture_imageview"
+                android:layout_width="121dp"
+                android:layout_height="118dp"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="145dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent=".80"
+                app:loadImageUrl="@{viewModel.character.img}"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                tools:scaleType="centerCrop"
+                tools:src="@drawable/rick_default" />
+
+            <TextView
+                android:id="@+id/name_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="124dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="124dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_medium_numbers"
+                android:maxLines="3"
+                android:text="@{viewModel.character.name}"
+                android:textAlignment="center"
+                android:textColor="@color/textDark"
+                android:textSize="@dimen/text_size_title"
+                app:layout_constraintBottom_toTopOf="@+id/lbl_occupation_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/picture_imageview"
+                tools:text="Heisenberg" />
+
+            <TextView
+                android:id="@+id/lbl_occupation_text"
+                android:layout_width="@dimen/generic_none_dimen"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="8dp"
+                android:text="@{viewModel.character.occupation}"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_textView"
+                tools:text="" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/generic_margin_small"
+            android:background="@drawable/backgound_text_block"
+            app:layout_constraintBottom_toTopOf="@+id/episodes_view_constraint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/generic_margin_small"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
+                android:focusableInTouchMode="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/lbl_occupation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/generic_margin_x_medium"
+                    android:textColor="@color/textLight"
+                    android:textSize="@dimen/text_size_body"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lbl_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_status"
+                    android:textColor="@color/textLight"
+                    android:textSize="@dimen/text_size_body"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lbl_status_text"
+                    android:layout_width="@dimen/generic_none_dimen"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@{viewModel.character.status}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/lbl_status"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_status"
+                    tools:text="" />
+
+                <TextView
+                    android:id="@+id/lbl_portrayed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/generic_margin_x_small"
+                    android:text="@string/lbl_portrayed"
+                    android:textColor="@color/textLight"
+                    android:textSize="@dimen/text_size_body"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lbl_status" />
+
+                <TextView
+                    android:id="@+id/lbl_portrayed_text"
+                    android:layout_width="@dimen/generic_none_dimen"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@{viewModel.character.portrayed}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/lbl_portrayed"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_portrayed"
+                    tools:text="" />
+
+                <TextView
+                    android:id="@+id/lbl_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/generic_margin_x_small"
+                    android:text="@string/lbl_nickname"
+                    android:textColor="@color/textLight"
+                    android:textSize="@dimen/text_size_body"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lbl_portrayed" />
+
+                <TextView
+                    android:id="@+id/lbl_nickname_text"
+                    android:layout_width="@dimen/generic_none_dimen"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@{viewModel.character.nickname}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/lbl_nickname"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_nickname"
+                    tools:text="" />
+
+                <TextView
+                    android:id="@+id/lbl_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/generic_margin_x_small"
+                    android:text="@string/lbl_birthday"
+                    android:textColor="@color/textLight"
+                    android:textSize="@dimen/text_size_body"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lbl_nickname" />
+
+                <TextView
+                    android:id="@+id/lbl_birthday_text"
+                    android:layout_width="@dimen/generic_none_dimen"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@{viewModel.character.birthday}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/lbl_birthday"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_birthday"
+                    tools:text="" />
+
+                <TextView
+                    android:id="@+id/lbl_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/generic_margin_x_small"
+                    android:text="@string/lbl_category"
+                    android:textColor="@color/textLight"
+                    android:textSize="@dimen/text_size_body"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lbl_birthday" />
+
+                <TextView
+                    android:id="@+id/lbl_category_text"
+                    android:layout_width="@dimen/generic_none_dimen"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@{viewModel.character.category}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/lbl_category"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_category"
+                    tools:text="" />
+
+                <TextView
+                    android:id="@+id/lbl_seasons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/generic_margin_x_small"
+                    android:text="@string/lbl_seasons"
+                    android:textColor="@color/textLight"
+                    android:textSize="@dimen/text_size_body"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lbl_category" />
+
+                <TextView
+                    android:id="@+id/lbl_seasons_text"
+                    android:layout_width="@dimen/generic_none_dimen"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@{viewModel.character.appearance}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/lbl_seasons"
+                    app:layout_constraintTop_toTopOf="@+id/lbl_seasons"
+                    tools:text="" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <include
+            android:id="@+id/include_no_internet_error_view"
+            layout="@layout/no_internet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:uiNoInternetState="@{ viewModel.model  }" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/episodes_view_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_text_block_pink"
+            android:layout_margin="@dimen/generic_margin_small"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            app:uiEpisodesView="@{viewModel.episode}"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/generic_margin_x_small"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/generic_margin_x_small"
+                android:layout_marginBottom="@dimen/generic_margin_x_small"
+                android:background="@android:color/transparent"
+                android:focusableInTouchMode="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieAnimation_v"
+                    android:layout_width="@dimen/no_favourite_image_lottie_dimen"
+                    android:layout_height="@dimen/no_favourite_image_lottie_dimen"
+                    android:background="@android:color/transparent"
+                    app:isFavouriteLottie="@{!viewModel.character.favourite}"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintWidth_default="percent"
+                    app:layout_constraintWidth_percent=".7"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="tickets.json"
+                    app:lottie_loop="true"
+                    tools:layout_editor_absoluteX="3dp" />
+
+                <TextView
+                    android:id="@+id/lbl_title_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="100dp"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@{viewModel.episode.title}"
+                    android:textColor="@color/textDark"
+                    android:textSize="@dimen/text_size_title"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.309"
+                    app:layout_constraintStart_toEndOf="@+id/lottieAnimation_v"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_loop="true"
+                    tools:text="mi episodio" />
+
+                <TextView
+                    android:id="@+id/characters_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/lbl_characters"
+                    android:textColor="@color/textLight"
+                    android:textSize="@dimen/text_size_body"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lottieAnimation_v" />
+
+                <TextView
+                    android:id="@+id/lbl_characters_episode"
+                    android:layout_width="@dimen/generic_none_dimen"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="end"
+                    android:text="@{viewModel.episode.characters}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/characters_textview"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_title_label"
+                    tools:text="asasdfasdfasf" />
+
+                <TextView
+                    android:id="@+id/series_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/lbl_series"
+                    android:textColor="@color/textLight"
+                    android:textSize="@dimen/text_size_body"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lottieAnimation_v"
+                    app:layout_constraintVertical_bias="0.939" />
+
+                <TextView
+                    android:id="@+id/lbl_series_episode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="end"
+                    android:text="@{viewModel.episode.series}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.873"
+                    app:layout_constraintStart_toEndOf="@+id/series_textview"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl_characters_episode"
+                    tools:text="asfasdfasd" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_marginTop="@dimen/generic_margin_small"
+    android:paddingTop="@dimen/generic_margin_medium"
+    android:paddingBottom="@dimen/generic_width_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="@dimen/generic_row_loader"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+</layout>
